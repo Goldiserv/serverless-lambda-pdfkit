@@ -42,12 +42,3 @@ functions:
           path: test1234321/get-pdf
           method: post
           cors: true
-  pdf-internal:
-    handler: functions/pdf-internal.generate
-    layers:
-      - { Ref: PdfKitLambdaLayer }
-    events:
-      - http:
-          path: test1234321/get-pdf-internal
-          method: post
-          cors: true
